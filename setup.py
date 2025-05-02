@@ -8,6 +8,12 @@ ext_modules = [
         ["src/freegroup/derivatives/main.cpp"],
         define_macros = [('VERSION_INFO', __version__)],
         ),
+    Pybind11Extension("freegroup._magnus",
+        [
+          "src/freegroup/tools/bindings.cpp",
+        ],
+        define_macros = [('VERSION_INFO', __version__)],
+    )
 ]
 
 setup(
