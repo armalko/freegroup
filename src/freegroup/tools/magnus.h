@@ -7,6 +7,7 @@
 #include <utility>
 #include <vector>
 #include <optional>
+#include <limits>
 
 using Letter = int;
 using Word = std::vector<Letter>;
